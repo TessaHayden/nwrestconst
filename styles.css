@@ -1,3 +1,11 @@
+nav {
+    font-family: "Roboto", serif;
+}
+
+ul {
+    font-family: 'Montserrat', sans-serif;
+}
+
 h1, h2 {
     font-family: 'cinzel', serif;
 }
@@ -6,19 +14,8 @@ header h1, h2 {
     color:rgba(233, 229, 229, 0.918)
 }
 
-header img {
-    border: white solid 2px;
-    margin: 2px;
-    padding: 6px;
-}
-
 body {
     font-family:'Montserrat', sans-serif;
 }
 
-.jumbotron {
-    margin: 0;
-    padding: 20px;
-    background-color:#081c31;
-    color: "white";
-}
+
