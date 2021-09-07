@@ -17,5 +17,8 @@ header h1, h2 {
 body {
     font-family:'Montserrat', sans-serif;
 }
+.card {
+    text-align: center;
+}
 
 
