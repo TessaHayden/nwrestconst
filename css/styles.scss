@@ -1,0 +1,189 @@
+
+nav {
+    
+    font-family: 'Fjalla One', sans-serif;
+
+    ul {
+        font-family: 'Roboto', sans-serif;
+    }
+}
+html {
+    box-sizing: border-box;
+    background:white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  .panels {
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+  }
+
+  .panel {
+    background: #393a44;
+    box-shadow: inset 0 0 0 5px rgba(255,255,255,0.1);
+    color: white;
+    text-align: center;
+    align-items: center;
+    /* Safari transitionend event.propertyName === flex */
+    /* Chrome + FF transitionend event.propertyName === flex-grow */
+    transition:
+      font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+      flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+      background 0.2s;
+    font-size: 20px;
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .panel1 { background-image:url("https://images.squarespace-cdn.com/content/v1/600a6248a3706134b72742fb/1612305108200-AV3LWKRIGRFIO9FIW1YG/Food-offerings-1024x1024.png"); }
+  .panel2 { background-image:url(https://images.squarespace-cdn.com/content/v1/600a6248a3706134b72742fb/1614115588729-D70YV7593SSRDARYWRDJ/61890529_2120179248098928_8925034365704994816_o.jpg); }
+  .panel3 { background-image:url(https://www.linfield.edu/assets/images/general/alumni/L-photo_2019.jpg); }
+ 
+
+  /* Flex Items */
+  .panel > * {
+    margin: 0;
+    width: 100%;
+    transition: transform 0.5s;
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .panel > *:first-child { transform: translateY(-100%); }
+  .panel.open-active > *:first-child { transform: translateY(0); }
+  .panel > *:last-child { transform: translateY(100%); }
+  .panel.open-active > *:last-child { transform: translateY(0); }
+
+  .panel p {
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+    font-size: 2em;
+  }
+  
+  .panel p:nth-child(2) {
+    font-size: 4em;
+  }
+
+  .panel.open {
+    flex: 5;
+    font-size: 40px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .panel p {
+      font-size: 1em;
+    }
+  }
+
+#container2 {
+        width: 100%;
+        height: 100vh;
+        color: #eee;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    .calendar {
+            width: 45rem;
+            height: 52rem;
+            background-color: #222227;
+            box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
+        
+            * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        }
+        .month {
+            width: 100%;
+            height: 12rem;
+            background-color:#167e56;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+            text-align: center;
+            text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+        }
+        .month i {
+            font-size: 2.5rem;
+            cursor: pointer;
+        }
+        .month h1 {
+            font-size: 3rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0.2rem;
+            margin-bottom: 1rem;
+        }
+        .month p {
+            font-size: 1.6rem;
+        }
+        .weekdays {
+        width: 100%;
+        height: 5rem;
+        padding: 0 0.4rem;
+        display: flex;
+        align-items: center;
+        }
+        .weekdays div {
+            font-size: 1.5rem;
+            font-weight: 400;
+            letter-spacing: 0.1rem;
+            width: calc(44.2rem/7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-shadow: 0 0.3rem 0.5rem rgba(252, 144, 144, 0.5);
+        }
+        .days {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0.2rem;
+        }
+        .days div {
+            font-size: 1.4rem;
+            margin: 0.3rem;
+            width: calc(40.2rem/7);
+            height: 5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+            transition: background-color 0.2s;
+        }
+        .days div:hover:not(.today) {
+            background-color: #262626;
+            border: 0.2rem solid #777;
+            cursor: pointer;
+        }
+        .prev-date,
+        .next-date {
+            opacity : 0.5;
+        } 
+        .today {
+            background-color: #167e56;
+        }
+        
+    }

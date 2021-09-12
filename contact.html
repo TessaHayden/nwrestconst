@@ -3,11 +3,15 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <!-- build:css css/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Montserrat&family=Open+Sans&display=swap"/>
-    <link rel="stylesheet" href="styles.css" />
+    <!-- endbuild -->
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css" />
+    
     <title>NW Restaurant Consultant</title>
 </head>
 <body>
@@ -27,5 +31,31 @@
             </div>
         </div>
     </nav>
+    <div class="container container-fluid">
+        <form>
+            <div class="form-group">
+                <label for="name">Your name:</label>
+                <input type="text" class="form-control" id="name" placeholder="name"/>
+            </div>
+            <div class="form-group">
+                <label for="inputEmail">Your email address:</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="email"/>
+            </div>
+            <div class="form-group">
+                <label for="phoneNumber">Your phone number:</label>
+                <input type="number" class="form-control" id="phoneNumber" placeholder="phone number"/>
+            </div>
+            <div class="form-group">
+                <label for="contactTextArea">Your message:</label>
+                <textarea class="form-control" id="contactTextArea" rows="9"></textarea>
+            </div>
+        </form>
+    </div>
+        <!-- build:js js/main.js -->
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <!-- endbuild -->
 </body>
 </html>
