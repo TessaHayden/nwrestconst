@@ -6,16 +6,12 @@ nav {
         font-family: 'Roboto', sans-serif;
     }
 }
-html {
-    box-sizing: border-box;
-    background:white;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 200;
-  }
-
-  .form-control {
-      display: inline;
-  }
+// html {
+//     box-sizing: border-box;
+//     background:white;
+//     font-family: 'Roboto', sans-serif;
+//     font-weight: 200;
+//   }
 
   body{ 
   .work-page {
@@ -111,12 +107,12 @@ body{
             width: 25rem;
             height: 32rem;
             background-color: #222227;
-            box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
+            box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.4);
         }
         .month {
             width: 100%;
             height: 7rem;
-            background-color:#167e56;
+            background-color:#2f9dcc;
             display: flex;
             justify-content: space-between;
             align-items: center;
