@@ -108,3 +108,18 @@ renderCalendar();
     });
   }, false);
 })();
+
+//show & tell images
+
+$(function () {
+  $("#show-btn-1").click(function(){
+    $("#hidden-viking").collapse("show");
+  });
+  $("#show-btn-2").click(function(){
+    $("#hidden-viking2").collapse("show");
+  });
+  $("#show-btn-3").click(function(){
+    $("#hidden-viking3").collapse("show");
+  });
+
+})

@@ -11,7 +11,12 @@ html {
   font-weight: 200; }
 
 body {
-  margin: 0; }
+  margin: 0; 
+}
+#hidden-imgs-work {
+  background: white;
+  min-height: 100vh;
+}
 
 *, *:before, *:after {
   box-sizing: inherit; }
@@ -38,14 +43,13 @@ body {
   display: flex;
   flex-direction: column; }
 
-.panel1 {
-  background-image: url("https://images.squarespace-cdn.com/content/v1/600a6248a3706134b72742fb/1612305108200-AV3LWKRIGRFIO9FIW1YG/Food-offerings-1024x1024.png"); }
-
-.panel2 {
-  background-image: url(https://images.squarespace-cdn.com/content/v1/600a6248a3706134b72742fb/1614115588729-D70YV7593SSRDARYWRDJ/61890529_2120179248098928_8925034365704994816_o.jpg); }
-
-.panel3 {
-  background-image: url(https://www.linfield.edu/assets/images/general/alumni/L-photo_2019.jpg); }
+ .panel1 { background-image:url(https://images.squarespace-cdn.com/content/v1/600a6248a3706134b72742fb/1612305108200-AV3LWKRIGRFIO9FIW1YG/Food-offerings-1024x1024.png); }
+  .panel2 { background-image:url(https://images.squarespace-cdn.com/content/v1/600a6248a3706134b72742fb/1614115588729-D70YV7593SSRDARYWRDJ/61890529_2120179248098928_8925034365704994816_o.jpg); }
+  .panel3 { background-image:url(http://bocchetticontracting.com/wp-content/uploads/2016/02/SHIGEZO-DARK.jpg); }
+  .panel4 { background-image:url(http://bocchetticontracting.com/wp-content/uploads/2016/02/SHIGEZO-DARK.jpg); }
+  .panel5 { background-image:url(https://images.squarespace-cdn.com/content/v1/571d342b40261d6b2e6eee24/1582586342371-KUTMZX8U3B7SQAD9MLX4/JannieHuang_Lechon_3161.jpg?format=1000w); }
+  .panel6 { background-image:url(https://images.getbento.com/accounts/606a9c22cbdd0f334c02ed59dad16f93/media/images/71835DSC_1278.jpg
+); }
 
 /* Flex Items */
 .panel > * {
@@ -74,6 +78,10 @@ body {
   font-family: 'Roboto', sans-serif;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
   font-size: 2em; }
+
+.panel button {
+  z-index: 1; 
+}
 
 .panel p:nth-child(2) {
   font-size: 4em; }
