@@ -6,8 +6,6 @@ nav {
         font-family: 'Roboto', sans-serif;
     }
 }
-
-
 html {
     box-sizing: border-box;
     background:white;
@@ -15,7 +13,10 @@ html {
     font-size: 20px;
     font-weight: 200;
   }
-  body {
+
+
+  body{ 
+  .work-page {
     margin: 0;
   } 
   *, *:before, *:after {
@@ -49,6 +50,9 @@ html {
   .panel1 { background-image:url("https://images.squarespace-cdn.com/content/v1/600a6248a3706134b72742fb/1612305108200-AV3LWKRIGRFIO9FIW1YG/Food-offerings-1024x1024.png"); }
   .panel2 { background-image:url(https://images.squarespace-cdn.com/content/v1/600a6248a3706134b72742fb/1614115588729-D70YV7593SSRDARYWRDJ/61890529_2120179248098928_8925034365704994816_o.jpg); }
   .panel3 { background-image:url(https://www.linfield.edu/assets/images/general/alumni/L-photo_2019.jpg); }
+  .panel4 { background-image:url("downloadedimgs/"); }
+  .panel5 { background-image:url(https://images.squarespace-cdn.com/content/v1/600a6248a3706134b72742fb/1614115588729-D70YV7593SSRDARYWRDJ/61890529_2120179248098928_8925034365704994816_o.jpg); }
+  .panel6 { background-image:url(https://www.linfield.edu/assets/images/general/alumni/L-photo_2019.jpg); }
  
   /* Flex Items */
   .panel > * {
@@ -83,24 +87,27 @@ html {
       font-size: 1em;
     }
   }
-
-  
-#container2 {
-    width: 100%;
-    height: 100vh;
-    color: #eee;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-        
-    * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-    }
 }
-    
-    .calendar {
+
+body{ 
+    .cater-page{ 
+
+        #container2 {
+            width: 100%;
+            height: 100vh;
+            color: #eee;
+            display: flex;
+            justify-content: left;
+            align-items: center;    
+            
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+        }
+        
+        .calendar {
             width: 45rem;
             height: 52rem;
             background-color: #222227;
@@ -132,11 +139,11 @@ html {
             font-size: 1.6rem;
         }
         .weekdays {
-        width: 100%;
-        height: 5rem;
-        padding: 0 0.4rem;
-        display: flex;
-        align-items: center;
+            width: 100%;
+            height: 5rem;
+            padding: 0 0.4rem;
+            display: flex;
+            align-items: center;
         }
         .weekdays div {
             font-size: 1.5rem;
@@ -177,4 +184,5 @@ html {
         .today {
             background-color: #167e56;
         }   
-    
+    }
+}
