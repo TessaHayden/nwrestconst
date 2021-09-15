@@ -33,7 +33,9 @@
   <div class="panels">
       <div class="panel panel1">
         <p class="panels">de Fuego</p>
-        <a href="#hidden-imgs-work" class="btn btn-sm" id="show-btn-1" role="button">arw dwn</a>
+        <button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-show" aria-expanded="false" aria-controls="collapseExample">
+    Arrow down
+  </button>
       </div>
       <div class="panel panel2">
         <p class="panels">Hayden's Lakefront Grill</p>
@@ -47,13 +49,15 @@
 </div>
 
 <div class="container-fluid">
-  <section>
-    <a class="hidden-show" id="hidden-imgs-work">
-      <img class="collapse" id="hidden-viking" src="downloadedimgs/viking.jpg" alt="Blueprints of the Viking."/>
-      <img class="collapse" id="hidden-viking2" src="downloadedimgs/viking2.jpg" alt="Blueprints for the Viking 2."/>
-      <img class="collapse" id="hidden-viking3" src="downloadedimgs/viking3.jpg" alt="Blueprints for the Viking 3."/>
-    </a>
-  </section>
+  <div class="row">
+    <div class="col-md-12">
+        <a class="collapse" id="hidden-imgs-work">
+          <img class="collapse" id="hidden-viking" src="downloadedimgs/viking.jpg" alt="Blueprints of the Viking."/>
+          <img class="collapse" id="hidden-viking2" src="downloadedimgs/viking2.jpg" alt="Blueprints for the Viking 2."/>
+          <img class="collapse" id="hidden-viking3" src="downloadedimgs/viking3.jpg" alt="Blueprints for the Viking 3."/>
+        </a>
+    </div>
+  </div>
 </div>
 
 
@@ -77,7 +81,20 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
     <!-- endbuild -->
+<script>
+  $(function () {
+      $("#show-btn-1").click(function () {
+        $("#hidden-viking").collapse("show");
+      });
+      $("#show-btn-2").click(function () {
+        $("#hidden-viking2").collapse("show");
+      });
+      $("#show-btn-3").click(function () {
+        $("#hidden-viking3").collapse("show");
+      });
 
+    })
+</script>
 
 </body>
 </html>

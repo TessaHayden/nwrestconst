@@ -13,10 +13,10 @@ nav {
 //     font-weight: 200;
 //   }
 
-  body{ 
-  .work-page {
+  body
+      .work-page { 
     margin: 0;
-  } 
+  
   *, *:before, *:after {
     box-sizing: inherit;
   }
@@ -44,6 +44,9 @@ nav {
     justify-content: center;
     display: flex;
     flex-direction: column;
+    .button {
+        z-index: 1;
+    }
   }
   .panel1 { background-image:url(https://images.squarespace-cdn.com/content/v1/600a6248a3706134b72742fb/1612305108200-AV3LWKRIGRFIO9FIW1YG/Food-offerings-1024x1024.png); }
   .panel2 { background-image:url(https://images.squarespace-cdn.com/content/v1/600a6248a3706134b72742fb/1614115588729-D70YV7593SSRDARYWRDJ/61890529_2120179248098928_8925034365704994816_o.jpg); }
@@ -69,7 +72,7 @@ nav {
 
   .panel p {
     text-transform: uppercase;
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
     font-size: 2em;
   }
@@ -84,101 +87,6 @@ nav {
     .panel p {
       font-size: 1em;
     }
-  }
-}
-
-body{ 
-    .cater-page{ 
-        #container2 {
-            width: 100%;
-            height: 100vh;
-            color: #eee;
-            display: flex-start;
-            justify-content: left;
-            align-items: center;    
-        }
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        .calendar {
-            width: 25rem;
-            height: 32rem;
-            background-color: #222227;
-            box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.4);
-        }
-        .month {
-            width: 100%;
-            height: 7rem;
-            background-color:#2f9dcc;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 1.7rem;
-            text-align: center;
-            text-shadow: 0 0.17rem 0.25rem rgba(0, 0, 0, 0.5);
-        }
-        .month i {
-            font-size: 1.75rem;
-            cursor: pointer;
-        }
-        .month h1 {
-            font-size: 1.5rem;
-            font-weight: 400;
-            text-transform: uppercase;
-            letter-spacing: 0.1rem;
-            margin-bottom: 1rem;
-        }
-        .month p {
-            font-size: 1.6rem;
-        }
-        .weekdays {
-            width: 100%;
-            height: 2.5rem;
-            padding: 0 0.2rem;
-            display: flex;
-            align-items: center;
-        }
-        .weekdays div {
-            font-size: .75rem;
-            font-weight: 400;
-            letter-spacing: 0.05rem;
-            width: calc(22.1rem/7);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-shadow: 0 0.015rem 0.25rem rgba(252, 144, 144, 0.5);
-        }
-        .days {
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            padding: 0.2rem;
-        }
-        .days div {
-            font-size: .7rem;
-            margin: 0.15rem;
-            width: calc(40.2rem/7);
-            height: 2.5rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-shadow: 0 0.13rem 0.25rem rgba(0, 0, 0, 0.5);
-            transition: background-color 0.2s;
-        }
-        .days div:hover:not(.today) {
-            background-color: #262626;
-            border: 0.12rem solid #777;
-            cursor: pointer;
-        }
-        .prev-date,
-        .next-date {
-            opacity : 0.5;
-        };
-        .today {
-            background-color: #2a6bdce5;
-        }   
     }
 }
+

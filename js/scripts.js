@@ -91,35 +91,24 @@ renderCalendar();
 // script for form validation
 
 // Example starter JavaScript for disabling form submissions if there are invalid fields
-(function () {
-  'use strict';
-  window.addEventListener('load', function () {
-// Fetch all the forms we want to apply custom Bootstrap validation styles to
-  var forms = document.getElementsByClassName('needs-validation');
-// Loop over them and prevent submission
-  var validation = Array.prototype.filter.call(forms, function (form) {
-    form.addEventListener('submit', function (event) {
-      if (form.checkValidity() === false) {
-        event.preventDefault();
-        event.stopPropagation();
-      }
-        form.classList.add('was-validated');
-      }, false);
-    });
-  }, false);
-})();
+// (function () {
+//   'use strict';
+//   window.addEventListener('load', function () {
+// // Fetch all the forms we want to apply custom Bootstrap validation styles to
+//   var forms = document.getElementsByClassName('needs-validation');
+// // Loop over them and prevent submission
+//   var validation = Array.prototype.filter.call(forms, function (form) {
+//     form.addEventListener('submit', function (event) {
+//       if (form.checkValidity() === false) {
+//         event.preventDefault();
+//         event.stopPropagation();
+//       }
+//         form.classList.add('was-validated');
+//       }, false);
+//     });
+//   }, false);
+// })();
 
-//show & tell images
 
-$(function () {
-  $("#show-btn-1").click(function(){
-    $("#hidden-viking").collapse("show");
-  });
-  $("#show-btn-2").click(function(){
-    $("#hidden-viking2").collapse("show");
-  });
-  $("#show-btn-3").click(function(){
-    $("#hidden-viking3").collapse("show");
-  });
 
-})
+
