@@ -3,7 +3,7 @@ nav {
   nav ul {
     font-family: 'Roboto', sans-serif; }
 
-body .work-page {
+body {
   /* Flex Items */ }
   body .work-page {
     margin: 0; }
@@ -32,17 +32,17 @@ body .work-page {
     body .panel .button {
       z-index: 1; }
   body .panel1 {
-    background-image: url(https://images.squarespace-cdn.com/content/v1/600a6248a3706134b72742fb/1612305108200-AV3LWKRIGRFIO9FIW1YG/Food-offerings-1024x1024.png); }
+    background-image: url(https://scontent.fhio2-2.fna.fbcdn.net/v/t1.6435-9/89716182_3699832656724976_4486456913948573696_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=973b4a&_nc_ohc=HBF92pkcabcAX8y5-X9&_nc_ht=scontent.fhio2-2.fna&oh=e5f17ce1c5ef51f684aabec4e35479a8&oe=616A5960); }
   body .panel2 {
     background-image: url(https://images.squarespace-cdn.com/content/v1/600a6248a3706134b72742fb/1614115588729-D70YV7593SSRDARYWRDJ/61890529_2120179248098928_8925034365704994816_o.jpg); }
   body .panel3 {
     background-image: url(http://bocchetticontracting.com/wp-content/uploads/2016/02/SHIGEZO-DARK.jpg); }
   body .panel4 {
-    background-image: url(http://bocchetticontracting.com/wp-content/uploads/2016/02/SHIGEZO-DARK.jpg); }
+    background-image: url(http://127.0.0.1:5500/downloadedimgs/www.haydensgrill.com_menus_.png); }
   body .panel5 {
-    background-image: url(https://images.squarespace-cdn.com/content/v1/600a6248a3706134b72742fb/1614115588729-D70YV7593SSRDARYWRDJ/61890529_2120179248098928_8925034365704994816_o.jpg); }
+    background-image: url(http://127.0.0.1:5500/downloadedimgs/defuegodinnermenu.png); }
   body .panel6 {
-    background-image: url(https://www.linfield.edu/assets/images/general/alumni/L-photo_2019.jpg); }
+    background-image: url(http://127.0.0.1:5500/downloadedimgs/ShigezoMenu.png); }
   body .panel > * {
     margin: 0;
     width: 100%;
@@ -72,93 +72,3 @@ body .work-page {
   @media only screen and (max-width: 600px) {
     body .panel p {
       font-size: 1em; } }
-
-body .cater-page * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-body .cater-page #container2 {
-  width: 100%;
-  height: 100vh;
-  color: #eee;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-body .cater-page .calendar {
-  width: 45rem;
-  height: 52rem;
-  background-color: #222227;
-  box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4); }
-
-body .cater-page .month {
-  width: 100%;
-  height: 12rem;
-  background-color: #167e56;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 2rem;
-  text-align: center;
-  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5); }
-
-body .cater-page .month i {
-  font-size: 2.5rem;
-  cursor: pointer; }
-
-body .cater-page .month h1 {
-  font-size: 3rem;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-  margin-bottom: 1rem; }
-
-body .cater-page .month p {
-  font-size: 1.6rem; }
-
-body .cater-page .weekdays {
-  width: 100%;
-  height: 5rem;
-  padding: 0 0.4rem;
-  display: flex;
-  align-items: center; }
-
-body .cater-page .weekdays div {
-  font-size: 1.5rem;
-  font-weight: 400;
-  letter-spacing: 0.1rem;
-  width: calc(44.2rem/7);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-shadow: 0 0.3rem 0.5rem rgba(252, 144, 144, 0.5); }
-
-body .cater-page .days {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0.2rem; }
-
-body .cater-page .days div {
-  font-size: 1.4rem;
-  margin: 0.3rem;
-  width: calc(40.2rem/7);
-  height: 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
-  transition: background-color 0.2s; }
-
-body .cater-page .days div:hover:not(.today) {
-  background-color: #262626;
-  border: 0.2rem solid #777;
-  cursor: pointer; }
-
-body .cater-page .prev-date,
-body .cater-page .next-date {
-  opacity: 0.5; }
-
-body .cater-page .today {
-  background-color: #087ab8; }

@@ -6,6 +6,7 @@ nav {
         font-family: 'Roboto', sans-serif;
     }
 }
+
 // html {
 //     box-sizing: border-box;
 //     background:white;
@@ -13,10 +14,10 @@ nav {
 //     font-weight: 200;
 //   }
 
-  body
-      .work-page { 
+  body{ 
+  .work-page {
     margin: 0;
-  
+  } 
   *, *:before, *:after {
     box-sizing: inherit;
   }
@@ -48,12 +49,12 @@ nav {
         z-index: 1;
     }
   }
-  .panel1 { background-image:url(https://images.squarespace-cdn.com/content/v1/600a6248a3706134b72742fb/1612305108200-AV3LWKRIGRFIO9FIW1YG/Food-offerings-1024x1024.png); }
+  .panel1 { background-image:url(https://scontent.fhio2-2.fna.fbcdn.net/v/t1.6435-9/89716182_3699832656724976_4486456913948573696_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=973b4a&_nc_ohc=HBF92pkcabcAX8y5-X9&_nc_ht=scontent.fhio2-2.fna&oh=e5f17ce1c5ef51f684aabec4e35479a8&oe=616A5960); }
   .panel2 { background-image:url(https://images.squarespace-cdn.com/content/v1/600a6248a3706134b72742fb/1614115588729-D70YV7593SSRDARYWRDJ/61890529_2120179248098928_8925034365704994816_o.jpg); }
   .panel3 { background-image:url(http://bocchetticontracting.com/wp-content/uploads/2016/02/SHIGEZO-DARK.jpg); }
-  .panel4 { background-image:url(http://bocchetticontracting.com/wp-content/uploads/2016/02/SHIGEZO-DARK.jpg); }
-  .panel5 { background-image:url(https://images.squarespace-cdn.com/content/v1/600a6248a3706134b72742fb/1614115588729-D70YV7593SSRDARYWRDJ/61890529_2120179248098928_8925034365704994816_o.jpg); }
-  .panel6 { background-image:url(https://www.linfield.edu/assets/images/general/alumni/L-photo_2019.jpg); }
+  .panel4 { background-image:url(http://127.0.0.1:5500/downloadedimgs/www.haydensgrill.com_menus_.png); }
+  .panel5 { background-image:url(http://127.0.0.1:5500/downloadedimgs/defuegodinnermenu.png); }
+  .panel6 { background-image:url(http://127.0.0.1:5500/downloadedimgs/ShigezoMenu.png); }
  
   /* Flex Items */
   .panel > * {
@@ -87,6 +88,6 @@ nav {
     .panel p {
       font-size: 1em;
     }
-    }
+  }
 }
 
