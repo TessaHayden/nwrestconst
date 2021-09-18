@@ -6,21 +6,23 @@ nav {
         font-family: 'Roboto', sans-serif;
     }
 }
+footer {
+  padding: 3rem;
+}
 
-// html {
-//     box-sizing: border-box;
-//     background:white;
-//     font-family: 'Roboto', sans-serif;
-//     font-weight: 200;
-//   }
+.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 4;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 5;
+  }
+}
 
   body{ 
   .work-page {
     margin: 0;
   } 
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
   .panels {
     min-height: 100vh;
     overflow: hidden;
@@ -32,12 +34,6 @@ nav {
     color: white;
     text-align: center;
     align-items: center;
-    /* Safari transitionend event.propertyName === flex */
-    /* Chrome + FF transitionend event.propertyName === flex-grow */
-    transition:
-      font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
-      flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
-      background 0.2s;
     font-size: 20px;
     background-size: cover;
     background-position: center;
@@ -54,40 +50,5 @@ nav {
   .panel3 { background-image:url(http://bocchetticontracting.com/wp-content/uploads/2016/02/SHIGEZO-DARK.jpg); }
   .panel4 { background-image:url(http://127.0.0.1:5500/downloadedimgs/www.haydensgrill.com_menus_.png); }
   .panel5 { background-image:url(http://127.0.0.1:5500/downloadedimgs/defuegodinnermenu.png); }
-  .panel6 { background-image:url(http://127.0.0.1:5500/downloadedimgs/ShigezoMenu.png); }
- 
-  /* Flex Items */
-  .panel > * {
-    margin: 0;
-    width: 100%;
-    transition: transform 0.5s;
-    flex: 1 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .panel6 { background-image:url(http://127.0.0.1:5500/downloadedimgs/ShigezoMenu.png); }  
   }
-  .panel > *:first-child { transform: translateY(-100%); }
-  .panel.open-active > *:first-child { transform: translateY(0); }
-  .panel > *:last-child { transform: translateY(100%); }
-  .panel.open-active > *:last-child { transform: translateY(0); }
-
-  .panel p {
-    text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
-    text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
-    font-size: 2em;
-  }
-  .panel p:nth-child(2) {
-    font-size: 4em;
-  }
-  .panel.open {
-    flex: 5;
-    font-size: 40px;
-  }
-  @media only screen and (max-width: 600px) {
-    .panel p {
-      font-size: 1em;
-    }
-  }
-}
-
