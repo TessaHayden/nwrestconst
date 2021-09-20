@@ -7,6 +7,13 @@ nav {
         font-family: 'Montserrat', sans-serif;
         font-weight: 600;
     }
+    li {
+      padding: 5px;
+    }
+}
+
+a .navbar-brand {
+  justify-content: flex-start;
 }
 
 p {

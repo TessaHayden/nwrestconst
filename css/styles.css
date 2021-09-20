@@ -4,6 +4,11 @@ nav {
   nav ul {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600; }
+  nav li {
+    padding: 5px; }
+
+a .navbar-brand {
+  justify-content: flex-start; }
 
 p {
   font-family: 'Roboto', sans-serif; }
